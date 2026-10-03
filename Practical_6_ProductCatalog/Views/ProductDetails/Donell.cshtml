@@ -1,0 +1,31 @@
+﻿@model Practical_6_ProductCatalog.Models.Product    
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Donell</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th><img src="@Model.productimg" width="350" height="350" /></th>
+        </tr>
+        <tr>
+            <h2>@Model.ProductName</h2>
+            <p>@Model.ProductName</p>
+            <p>@Model.ProductDetails</p>
+            <p>@Model.productCategory</p>
+        </tr>
+    </table>
+    <button>@Html.ActionLink("Back to List", "Index")</button>
+
+
+
+</body>
+</html>
